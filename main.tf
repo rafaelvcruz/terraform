@@ -45,7 +45,7 @@ variable "do_token" {
 }
 
 variable "ssh_key_name" {
-  default = "Jornada"
+  default = ""
 }
 
 output "jenkins_ip" {
