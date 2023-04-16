@@ -12,10 +12,10 @@ provider "digitalocean" {
 }
 
 resource "digitalocean_droplet" "jenkins" {
-  image    = "ubuntu-18-04-x64"
+  image    = "ubuntu-22-04-x64"
   name     = "jenkins"
   region   = var.region
-  size     = "s-1vcpu-2gb"
+  size     = "s-2vcpu-2gb"
   ssh_keys = [data.digitalocean_ssh_key.ssh_key.id]
 }
 
